@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlms="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.main{
+	width: 700px;
+	height: 700px;
+	margin:auto;
+	margin-top: 100px;
+}
+
+table{
+	text-align: center;
+} 
+
+.register{
+	text-align: center;
+	display: inline-block;
+	border: 1px solid;
+	width: 80px;
+	height: 30px;
+	background-color: mistyrose;
+	text-decoration: none;
+	line-height: 30px;	
+}
+</style>
+</head>
+<body>
+<div class="main">
+	<a href="/board/register" class="register">글 쓰기</a>
+	<table>
+		<colgroup>
+			<col width="50">
+			<col width="300">
+			<col width="150">
+			<col width="200">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>번호</th>
+				<th>제목</th>
+				<th>작성자</th>
+				<th>등록일</th>	
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="value :${value}">
+				<td th:text="${value.id}"></td>	
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>
