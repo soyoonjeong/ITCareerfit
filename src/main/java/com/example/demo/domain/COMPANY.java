@@ -25,12 +25,13 @@ public class COMPANY {
 	@Column(columnDefinition = "LONGTEXT")
 	private String company_url;
 	private int employee_num;
-	@Column(nullable = false)
+	@Column//(nullable = false)
 	private int profit;
-	@Column(nullable = false)
+	@Column//(nullable = false)
 	private int stable;
-	@Column(nullable = false)
+	@Column//(nullable = false)
 	private int grow;
+	private int pay;
 	@Column(columnDefinition = "LONGTEXT")
 	private String culture;
 	@Column(columnDefinition = "LONGTEXT")

@@ -24,9 +24,12 @@ import lombok.ToString;
 public class USER {
 	//https://wikidocs.net/161165
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	
+	@Column(nullable = false, length = 45)
 	private String email;
-
-	 @Column(nullable = false, length = 45)
+	@Column(nullable = false, length = 45)
 	private String password;
 	 @Column(nullable = false, length = 45)
 	private String nm;
@@ -51,11 +54,11 @@ public class USER {
 	private String good_posts;
 	@Column(columnDefinition = "LONGTEXT")
 	private String img;
-	@Column(nullable = false)
+	@Column//(nullable = false)
 	private int profit;
-	@Column(nullable = false)
+	@Column//(nullable = false)
 	private int stable;
-	@Column(nullable = false)
+	@Column//(nullable = false)
 	private int grow;
 	@Column(columnDefinition = "LONGTEXT")
 	private String culture;

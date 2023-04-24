@@ -25,7 +25,7 @@ public class BoardService {
     }
     //목록
     public List<Board> list(){
-    	return boardRepository.findAll(Sort.by(Sort.Direction.ASC, "id"));
+    	return boardRepository.findAll(Sort.by(Sort.Direction.ASC, "idx"));
     }
     //상세보기
     public Board detail(int idx) {
