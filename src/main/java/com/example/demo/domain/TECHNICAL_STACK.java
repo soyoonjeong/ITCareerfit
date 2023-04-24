@@ -16,7 +16,7 @@ import lombok.ToString;
 @NoArgsConstructor // jpa 필수
 @AllArgsConstructor
 @ToString
-@Entity(name = "TECHNICAL_STACK")
+@Entity(name = "technical_stack")
 public class TECHNICAL_STACK {
 	//https://wikidocs.net/161165
 	@Id

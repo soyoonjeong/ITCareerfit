@@ -18,7 +18,7 @@ import lombok.ToString;
 @NoArgsConstructor // jpa 필수
 @AllArgsConstructor
 @ToString
-@Entity(name = "POST")
+@Entity(name = "post")
 public class POST {
 	//https://wikidocs.net/161165
 	@Id

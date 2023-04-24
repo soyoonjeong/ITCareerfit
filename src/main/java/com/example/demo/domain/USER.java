@@ -20,7 +20,7 @@ import lombok.ToString;
 @NoArgsConstructor // jpa 필수
 @AllArgsConstructor
 @ToString
-@Entity(name = "USER")
+@Entity(name = "user")
 public class USER {
 	//https://wikidocs.net/161165
 	@Id
@@ -29,17 +29,23 @@ public class USER {
 	
 	@Column(nullable = false, length = 45)
 	private String email;
+	
 	@Column(nullable = false, length = 45)
 	private String password;
-	 @Column(nullable = false, length = 45)
+	
+	@Column(nullable = false, length = 45)
 	private String nm;
+	
 	@Column(nullable = false, length = 45)
 	private String phone;
+	
 	@CreationTimestamp
 	@Column
 	private LocalDate birthday;
+	
 	@Column(columnDefinition = "LONGTEXT")
 	private String pos;
+	
 	@Column(length = 45)
 	private String company_1;
 	@Column(length = 45)
@@ -50,19 +56,23 @@ public class USER {
 	private String company_4;
 	@Column(length = 45)
 	private String company_5;
+	
 	@Column(columnDefinition = "LONGTEXT")
 	private String good_posts;
+	
 	@Column(columnDefinition = "LONGTEXT")
 	private String img;
+	
 	@Column//(nullable = false)
 	private int profit;
 	@Column//(nullable = false)
 	private int stable;
 	@Column//(nullable = false)
 	private int grow;
+	@Column//(nullable = false)
+	private int pay;
 	@Column(columnDefinition = "LONGTEXT")
 	private String culture;
-	@Column(columnDefinition = "LONGTEXT")
-	private String img_url;
+	
 	
 }
